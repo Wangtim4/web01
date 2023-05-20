@@ -1,3 +1,4 @@
+<!-- 第一版 -->
 <?php
 include_once "../base.php";
 // print_r($_FILES['img']['tmp_name']);
@@ -91,4 +92,5 @@ if (is_uploaded_file($_FILES['img']['tmp_name'])) {
     $Title->save($row);
 
     to("../back.php?do=title");
+
     ?>
